@@ -1,0 +1,9 @@
+- Add undo for everything
+- Add messages (including undo link)
+- Add loading spinners
+- Add due date
+- Add sorting
+
+Bugs:
+- Deleting Lists
+- Done tasks not displaying pretty
