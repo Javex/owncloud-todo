@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<info>
+	<id>todo</id>
+	<name>ToDo List</name>
+	<licence>AGPL</licence>
+	<author>Florian Ruechel</author>
+	<require>4</require>
+	<shipped>false</shipped>
+	<description>A small ToDo list with support for multiple list, due dates and sorting.</description>
+	<standalone/>
+	<default_enable/>
+</info>

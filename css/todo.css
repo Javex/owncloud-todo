@@ -1,0 +1,345 @@
+div#content div#leftcontent{
+    top: inherit;
+}
+
+div#content div#rightcontent {
+    top: 6em;
+}
+
+div#bottomcontent {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+div#messagebox {
+    position: absolute;
+    display: none;
+    top: 0;
+    left:25%;
+    z-index: 101;
+    width: 50%;
+    line-height: 1em;
+    padding: 0.5em;
+    background-color: #CECECE;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+div#messagebox.error {
+    background-color: red;
+}
+
+h1#list_title {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+ul.tasks {
+}
+
+ul.tasks li.task_item {
+    cursor: pointer;
+    line-height: 30px;
+    margin: 0 0.3em;
+    width: 99%;
+}
+
+ul.tasks li.task_item:hover {
+    background: none repeat scroll 0 0 #DDDDDD;
+    color: #333333;
+    cursor: pointer;
+}
+
+#leftcontent ul li.list_item {
+    padding: 0.6em 0.5em 0.4em 2.5em;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #FFFFFF;
+    font-size: 1.2em;
+    -webkit-transition:background 300ms;
+    -moz-transition:background 300ms;
+    -o-transition:background 300ms;
+    transition:background 300ms;
+}
+
+#leftcontent ul li.list_item.active {
+    background-color: #DDDDDD;
+    font-weight: bold;
+}
+
+li:hover div.controls {
+    display: inline;
+}
+
+div.controls {
+    display: none;
+}
+
+div.controls button, .dismiss_message{
+    opacity: 0.4;
+}
+
+div.controls button:hover, .dismiss_message:hover {
+    opacity: 1.0;
+}
+
+li.done_break {
+    cursor: default;
+}
+
+hr.done_break, li.task_done {
+    color: #DDDDDD;
+    opacity: 0.7;
+}
+
+form input#add_task_input {
+    width: 97%;
+}
+
+form#task_addlist_form {
+    display: none;
+}
+
+form#task_addlist_form input[type="text"] {
+    width: 80%;
+}
+
+form#task_addlist_form input[type="submit"] {
+    display: none;
+}
+
+form.task_item_form, form.task_item_form span {
+    cursor: pointer;
+}
+
+span.task_text {
+    padding: 1px 7px;
+}
+
+input.task_text {
+    display: none;
+    padding: 1px 5px;
+    margin: 0;
+}
+
+.delete_list, .delete_task, .dismiss_message {
+    cursor:pointer;
+    background: url("/core/img/actions/delete.svg") no-repeat scroll center center transparent;
+}
+
+#messagetext {
+    display: inline;
+}
+
+.dismiss_message {
+    float:right;
+    display: inline;
+}
+
+.delete_task {
+    line-height: inherit;
+    float:right;
+}
+
+.svg {
+    border: inherit;
+}
+
+div#leftcontent a.list_select {
+    display:block;
+    float:left;
+    width: 95%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+	/* The above is just a safe fallback
+	width value for browsers that don't
+	yet support the calc function */
+	width: -moz-calc(100% - 1.6em - 25px);
+	/* Mozilla calc function */
+	width: -webkit-calc(100% - 1.6em - 25px);
+	/* Webkit calc function */
+	width: calc(100% - 1.6em - 25px);
+	/* Calc for W3C-compliant browsers */
+    
+    height: 100%;
+    float:left;
+    padding: 0.5em 0.8em;
+}
+
+div#leftcontent li.list_item {
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Floating Circles Ajax Loading Spinners
+ */
+ 
+#floatingCirclesG{
+position:relative;
+display:none;
+width:500px;
+height:500px;
+-webkit-transform:scale(0.6);
+-moz-transform:scale(0.6);
+-o-transform:scale(0.6);
+-ms-transform:scale(0.6);
+}
+
+.f_circleG{
+position:absolute;
+background-color:#FFFFFF;
+height:91px;
+width:91px;
+-moz-border-radius:45px;
+-webkit-border-radius:45px;
+border-radius:45px;
+-webkit-animation-name:f_fadeG;
+-webkit-animation-duration:1.04s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-moz-animation-name:f_fadeG;
+-moz-animation-duration:1.04s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-o-animation-name:f_fadeG;
+-o-animation-duration:1.04s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+-ms-animation-name:f_fadeG;
+-ms-animation-duration:1.04s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+}
+
+#frotateG_01{
+left:0;
+top:205px;
+-webkit-animation-delay:0.39s;
+-moz-animation-delay:0.39s;
+-o-animation-delay:0.39s;
+-ms-animation-delay:0.39s}
+
+#frotateG_02{
+left:59px;
+top:59px;
+-webkit-animation-delay:0.52s;
+-moz-animation-delay:0.52s;
+-o-animation-delay:0.52s;
+-ms-animation-delay:0.52s}
+
+#frotateG_03{
+left:205px;
+top:0;
+-webkit-animation-delay:0.65s;
+-moz-animation-delay:0.65s;
+-o-animation-delay:0.65s;
+-ms-animation-delay:0.65s;
+}
+
+#frotateG_04{
+right:59px;
+top:59px;
+-webkit-animation-delay:0.78s;
+-moz-animation-delay:0.78s;
+-o-animation-delay:0.78s;
+-ms-animation-delay:0.78s;
+}
+
+#frotateG_05{
+right:0;
+top:205px;
+-webkit-animation-delay:0.9099999999999999s;
+-moz-animation-delay:0.9099999999999999s;
+-o-animation-delay:0.9099999999999999s;
+-ms-animation-delay:0.9099999999999999s;
+}
+
+#frotateG_06{
+right:59px;
+bottom:59px;
+-webkit-animation-delay:1.04s;
+-moz-animation-delay:1.04s;
+-o-animation-delay:1.04s;
+-ms-animation-delay:1.04s;
+}
+
+#frotateG_07{
+left:205px;
+bottom:0;
+-webkit-animation-delay:1.1700000000000002s;
+-moz-animation-delay:1.1700000000000002s}
+
+#frotateG_08{
+left:59px;
+bottom:59px;
+-webkit-animation-delay:1.3s;
+-moz-animation-delay:1.3s;
+-o-animation-delay:1.1700000000000002s;
+-ms-animation-delay:1.1700000000000002s;
+}
+
+#frotateG_08{
+left:59px;
+bottom:59px;
+-webkit-animation-delay:1.3s;
+-moz-animation-delay:1.3s;
+-o-animation-delay:1.3s;
+-ms-animation-delay:1.3s;
+}
+
+@-webkit-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-moz-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-o-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-ms-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
